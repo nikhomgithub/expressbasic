@@ -1,0 +1,11 @@
+<% include patials/header %>
+<h1>Our <%= title %></h1>
+<h2>From people <%= people %></h2>
+<ul>
+<% people.forEach((i)=>{%>
+  <li>
+    <%= i.name %>
+  </li>
+<%}) %>
+</ul>
+<% include patials/footer %>
